@@ -19,7 +19,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <SparkFun_MMA8452Q.h>
-#include <linethings_temp.h>
+#include "linethings_temp.h"
 
 // Debug On / Off
 //#define USER_DEBUG
