@@ -134,6 +134,8 @@ BLECharacteristic blech_command_write = BLECharacteristic(blech_command_write_uu
 BLECharacteristic blech_command_response = BLECharacteristic(blech_command_response_uuid);
 BLECharacteristic blech_notify_sw = BLECharacteristic(blech_notify_sw_uuid);
 BLECharacteristic blech_notify_temp = BLECharacteristic(blech_notify_temp_uuid);
+/*test-----------------------------------------*/
+unsigned int test5=0;
 
 // UUID Converter
 void strUUID2Bytes(String strUUID, uint8_t binUUID[]) {
@@ -711,6 +713,8 @@ void ledWrite(unsigned int num, unsigned data) {
       pin = LED_DS4;
       break;
     case 5:
+      if(test5==0){test5=1;}else{test5=0;}
+      data = test5;
       pin = LED_DS5;
       break;
     default:
@@ -1092,7 +1096,7 @@ void loop() {
 
   bool refresh_display = g_flag_display && !g_display_user_mode && !g_i2c_user_mode;
   bool notify_sensor = g_flag_notify && blech_notify_board_state.notifyEnabled();
-  
+
   float temperature;
   // Read sensor value
   if (!g_i2c_user_mode && (refresh_display || notify_sensor)) {
