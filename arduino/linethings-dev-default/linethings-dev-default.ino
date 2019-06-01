@@ -1123,7 +1123,7 @@ void loop() {
     display.println(accel.cy);
     display.print("Z:");
     display.println(accel.cz);
-    display.print("Temperature:");
+    display.print("temperature:");
     display.println(temperature);
     if (g_data_sw1) {
       display.print("SW1:ON / ");
