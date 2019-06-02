@@ -301,7 +301,7 @@ void bleWriteEvent(uint16_t conn_handle, BLECharacteristic* chr, uint8_t* data, 
   byte length = data[2];
   byte hash = data[3];
 
-  Serial.println("UUID Change ");
+  Serial.println("UUID change ");
 
   if (cmd == 0) {
     // Write peripheral device and GPIO
