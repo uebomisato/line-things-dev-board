@@ -374,8 +374,9 @@ async function readCharacteristic(characteristic) {
     }
 }
 
-function test3callback(){
+async function test3callback(){
   console.log("test3");
+  console.log(document.getElementById("led3-id"));
   document.getElementById("led3-id").checked^=true;
 }
 //ここで各LEDのvalueを探して読み取って書き込んでいる
