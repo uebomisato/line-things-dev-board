@@ -374,11 +374,6 @@ async function readCharacteristic(characteristic) {
     }
 }
 
-async function test3callback(){
-  console.log("test3");
-  console.log(document.getElementById("led3-id"));
-  document.getElementById("led3-id").checked^=true;
-}
 //ここで各LEDのvalueを探して読み取って書き込んでいる
 async function updateLedState(device) {
     const card = getDeviceCard(device);
@@ -526,4 +521,10 @@ function sleep(ms) {
 
 function buf2hex(buffer) { // buffer is an ArrayBuffer
     return Array.prototype.map.call(new Uint8Array(buffer), x => ('00' + x.toString(16)).slice(-2)).join('');
+}
+
+function test3callback(){
+  console.log("test3");
+  console.log(document.getElementById("led3-id"));
+  document.getElementById("led3-id").checked^=true;
 }
