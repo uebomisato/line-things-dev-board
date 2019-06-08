@@ -526,5 +526,5 @@ function buf2hex(buffer) { // buffer is an ArrayBuffer
 function test3callback(){
   console.log("test3");
   console.log(document.getElementById("led3-id"));
-  document.getElementById("led3-id").click();
+  document.getElementById("led3-id").checked^=true;
 }
