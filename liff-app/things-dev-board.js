@@ -1,4 +1,5 @@
-const DEVBOARD_SERVICE_UUID = "f2b742dc-35e3-4e55-9def-0ce4a209c552";
+// const DEVBOARD_SERVICE_UUID = "f2b742dc-35e3-4e55-9def-0ce4a209c552";
+const DEVBOARD_SERVICE_UUID = "7da895b0-7477-4f56-af8b-e4258fb36034";
 const NOTIFY_BOARD_STATE_CHARACTERISTIC_UUID = "e90b4b4e-f18a-44f0-8691-b041c7fe57f2";
 const WRITE_BOARD_STATE_CHARACTERISTIC_UUID = "4f2596d7-b3d6-4102-85a2-947b80ab4c6f";
 const VERSION_CHARACTERISTIC_UUID = "be25a3fe-92cd-41af-aeee-0a9097570815";
@@ -12,7 +13,7 @@ const NOTIFY_TEMP_CHARACTERISTIC_UUID = "fe9b11a8-5f98-40d6-ae82-bea94816277f";
  *    See here for details.
  *    https://line.github.io/line-things-dev-board/liff-app/js-control/
  */
-class ThingsDevBoard { 
+class ThingsDevBoard {
     constructor(device) {
         this.device = device;
         this.svUuid = DEVBOARD_SERVICE_UUID;
