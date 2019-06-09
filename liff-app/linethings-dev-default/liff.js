@@ -1,7 +1,6 @@
 const USER_SERVICE_UUID = "f2b742dc-35e3-4e55-9def-0ce4a209c552";
 const USER_CHARACTERISTIC_NOTIFY_UUID = "e90b4b4e-f18a-44f0-8691-b041c7fe57f2";
-const USER_CHARACTERISTIC_WRITE_UUID = "t016b11bcee07533b31871e847e2b7c97";
-// const USER_CHARACTERISTIC_WRITE_UUID = "4f2596d7-b3d6-4102-85a2-947b80ab4c6f";
+const USER_CHARACTERISTIC_WRITE_UUID = "4f2596d7-b3d6-4102-85a2-947b80ab4c6f";
 const deviceUUIDSet = new Set();
 const connectedUUIDSet = new Set();
 const connectingUUIDSet = new Set();
